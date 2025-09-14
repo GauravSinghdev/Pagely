@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import DialogComp from "./DialogComp";
+import DialogComp01 from "./DialogComp01";
+import DialogComp02 from "./DialogComp02";
 
 export const metadata: Metadata = {
   title: "DialogBox",
@@ -30,8 +31,9 @@ export default function DialogBoxPage() {
           </p>
         </div>
       </div>
-      <div className="border-t flex flex-col gap-10">
-        <DialogComp />
+      <div className="border-t flex flex-col gap-10 divide-y-2">
+        <DialogComp01 />
+        <DialogComp02 />
       </div>
     </div>
   );

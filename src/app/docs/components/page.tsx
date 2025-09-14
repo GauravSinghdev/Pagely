@@ -14,7 +14,7 @@ export default function ComponentPage() {
     <div className="flex flex-col max-w-3xl mx-auto space-y-5">
       <div className="space-y-4">
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl font-semibold">Dialog Box</h1>
+          <h1 className="text-3xl font-semibold">Components</h1>
           <div className="flex gap-2 items-center">
             <Link href={"/docs/installation"}>
               <ArrowLeft className="bg-secondary/15 rounded" />

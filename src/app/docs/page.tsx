@@ -18,12 +18,11 @@ export default function DocsPage() {
         </div>
         <div>
           <p className="text-secondary/80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-            delectus?
+            Inspired by shadcn
           </p>
         </div>
       </div>
-      <div className="space-y-5">
+      {/* <div className="space-y-5">
         <p>
           This is not a component library. It is how you build your component
           library.
@@ -39,7 +38,7 @@ export default function DocsPage() {
           workarounds to override styles, or mixing components from different
           libraries with incompatible APIs.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

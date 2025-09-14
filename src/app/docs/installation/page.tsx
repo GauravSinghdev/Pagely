@@ -2,7 +2,8 @@ import React from "react";
 
 import { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Copy } from "lucide-react";
+import CopyComp from "./CopyComp";
 
 export const metadata: Metadata = {
   title: "Installation",
@@ -24,14 +25,14 @@ export default function InstallationPage() {
             </Link>
           </div>
         </div>
-        <div>
-          <p className="text-secondary/80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-            delectus?
-          </p>
-        </div>
+        <p className="text-secondary/80">
+          These are prerequisite for building a great applications.
+        </p>
+        <p className="text-secondary/80 my-2">
+          Follow the installation steps below :
+        </p>
       </div>
-      <div className="space-y-5 text-balance">
+      {/* <div className="space-y-5 text-balance">
         <p>
           This is not a component library. It is how you build your component
           library.
@@ -47,6 +48,28 @@ export default function InstallationPage() {
           workarounds to override styles, or mixing components from different
           libraries with incompatible APIs.
         </p>
+      </div> */}
+
+      <div className="flex flex-col gap-2 my-5 border-t">
+        <div className="space-y-2 my-5 text-balance">
+          <h1>Create Nextjs App : </h1>
+          <CopyComp
+            title={`npx create-next-app@latest my-project --typescript --eslint --app
+cd my-project`}
+          />
+        </div>
+
+        <div className="space-y-2 my-5 text-balance">
+          <h1>Install tailwindCSS v4.1 : </h1>
+          <CopyComp
+            title={"npm install tailwindcss @tailwindcss/postcss postcss"}
+          />
+        </div>
+
+        <div className="space-y-2 my-5 text-balance">
+          <h1>Install Motion : </h1>
+          <CopyComp title={"npm install motion"} />
+        </div>
       </div>
     </div>
   );

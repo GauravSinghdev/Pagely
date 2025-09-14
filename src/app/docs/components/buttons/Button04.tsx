@@ -56,6 +56,9 @@ function ButtonCode() {
   const [isCopied, setIsCopied] = useState(false);
 
   const codeString = `
+import { Sparkles, ArrowRight } from "lucide-react";
+import { TiTick } from "react-icons/ti";
+
 function Button04Comp() {
   return (
     <div className="w-full h-full bg-secondary/10 flex flex-col justify-center items-center gap-4">

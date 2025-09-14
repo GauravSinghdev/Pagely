@@ -4,7 +4,7 @@ interface DialogBoxProps {
   onClose: () => void;
 }
 
-export default function DialogBox({ onClose }: DialogBoxProps) {
+export default function DialogBox01({ onClose }: DialogBoxProps) {
   return (
     <div className="h-screen fixed inset-0 flex flex-col justify-center items-center z-50">
       {/* Overlay */}

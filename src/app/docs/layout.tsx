@@ -10,7 +10,7 @@ export default function layout({
       <div className="py-5 mx-2 col-span-2 hidden md:block">
         <Sidebar />
       </div>
-      <main className="py-5 mx-2 col-span-12 min-h-screen">{children}</main>
+      <main className="py-5 mx-2 col-span-14 md:col-span-12">{children}</main>
     </div>
   );
 }

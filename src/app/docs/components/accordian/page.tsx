@@ -1,26 +1,24 @@
-import React from "react";
-
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { pagesObj } from "@/lib/arrays";
+import Accordian01 from "./Accordian01";
 
 export const metadata: Metadata = {
-  title: "Components",
+  title: "Accordian",
 };
 
-export default function PagesPage() {
+export default function AccordianPage() {
   return (
     <div className="flex flex-col max-w-3xl mx-auto space-y-10">
       <div className="space-y-4">
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl font-semibold">Landing Pages</h1>
+          <h1 className="text-3xl font-semibold">DialogBox</h1>
           <div className="flex gap-2 items-center">
-            <Link href={"/docs/components"}>
+            <Link href={"/docs/pages"}>
               <ArrowLeft className="bg-secondary/15 rounded" />
             </Link>
 
-            <Link href={"/docs/components/accordian"} className="flex gap-2">
+            <Link href={"/docs/components/buttons"} className="flex gap-2">
               <ArrowRight className="bg-secondary/15 rounded" />
             </Link>
           </div>
@@ -32,16 +30,8 @@ export default function PagesPage() {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full gap-5 border-t pt-5">
-        {pagesObj.map((comp) => (
-          <Link
-            href={comp.link}
-            key={comp.title}
-            className="hover:underline hover:underline-offset-4 font-medium"
-          >
-            {comp.title}
-          </Link>
-        ))}
+      <div className="border-t flex flex-col gap-10 divide-y-2">
+        <Accordian01 />
       </div>
     </div>
   );

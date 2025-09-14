@@ -3,13 +3,13 @@
 import { Button } from "@/components/ui/button";
 import React, { useEffect, useState } from "react";
 import { TiTick } from "react-icons/ti";
-import DialogBox from "./DialogBox";
+import DialogBox01 from "./DialogBox01";
 
-export default function DialogComp() {
+export default function DialogComp01() {
   const [isCodeShown, setIsCodeShown] = useState(false);
 
   return (
-    <div className="flex flex-col space-y-10 my-10">
+    <div className="flex flex-col space-y-10 py-10">
       <h1 className="text-2xl font-medium text-secondary/80">Dialog Box 01</h1>
 
       <div className="flex flex-col gap-2">
@@ -56,7 +56,7 @@ function DialogBoxComp() {
         Open Dialog Box
       </button>
 
-      {isOpen && <DialogBox onClose={() => setIsOpen(false)} />}
+      {isOpen && <DialogBox01 onClose={() => setIsOpen(false)} />}
     </div>
   );
 }
@@ -64,7 +64,9 @@ function DialogBoxComp() {
 function DialogBoxCode() {
   const [isCopied, setIsCopied] = useState(false);
   const codeString = `
-  function DialogBoxComp() {
+import React, { useState } from "react";
+
+function DialogBoxComp() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
