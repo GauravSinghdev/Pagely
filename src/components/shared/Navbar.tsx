@@ -62,7 +62,13 @@ export default function Navbar() {
           <SearchComp />
         </div>
         <div className="flex items-center gap-2">
-          <VscGithub className="size-5" />
+          <Link
+            href={"https://github.com/GauravSinghdev/Pagely"}
+            target="_blank"
+          >
+            <VscGithub className="size-7" />
+          </Link>
+
           <ModeToggle />
         </div>
       </div>
