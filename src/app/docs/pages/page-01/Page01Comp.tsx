@@ -35,7 +35,7 @@ export default function Page01Comp() {
         </div>
       </div>
     </div>
-  );
+  );``
 }
 
 function Page01Co() {

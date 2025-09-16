@@ -22,23 +22,6 @@ export default function DocsPage() {
           </p>
         </div>
       </div>
-      {/* <div className="space-y-5">
-        <p>
-          This is not a component library. It is how you build your component
-          library.
-        </p>
-        <p>
-          You know how most traditional component libraries work: you install a
-          package from NPM, import the components, and use them in your app.
-        </p>
-        <p>
-          This approach works well until you need to customize a component to
-          fit your design system or require one that isn&apos;t included in the
-          library. Often, you end up wrapping library components, writing
-          workarounds to override styles, or mixing components from different
-          libraries with incompatible APIs.
-        </p>
-      </div> */}
     </div>
   );
 }

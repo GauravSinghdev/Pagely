@@ -45,10 +45,10 @@ const pagesObj = [
     title: "Page 01",
     link: "/docs/pages/page-01",
   },
-  // {
-  //   title: "Page 02",
-  //   link: "/docs/pages/page-02",
-  // },
+  {
+    title: "Page 02",
+    link: "/docs/pages/page-02",
+  },
   // {
   //   title: "Page 03",
   //   link: "/docs/pages/page-03",
