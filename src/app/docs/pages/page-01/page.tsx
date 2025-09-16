@@ -14,11 +14,11 @@ export default function LPage01() {
         <div className="flex justify-between items-center">
           <h1 className="text-3xl font-semibold">Page 01</h1>
           <div className="flex gap-2 items-center">
-            <Link href={"/docs/components/buttons"}>
+            <Link href={"/docs/components/dialog-box"}>
               <ArrowLeft className="bg-secondary/15 rounded" />
             </Link>
 
-            <Link href={"/docs/components/dialog-box"} className="flex gap-2">
+            <Link href={"/docs/pages/page-02"} className="flex gap-2">
               <ArrowRight className="bg-secondary/15 rounded" />
             </Link>
           </div>

@@ -19,7 +19,7 @@ export default function DialogBoxPage() {
               <ArrowLeft className="bg-secondary/15 rounded" />
             </Link>
 
-            <Link href={"/docs/components/dialog-box"} className="flex gap-2">
+            <Link href={"/docs/pages/page-01"} className="flex gap-2">
               <ArrowRight className="bg-secondary/15 rounded" />
             </Link>
           </div>

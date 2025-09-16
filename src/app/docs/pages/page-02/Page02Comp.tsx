@@ -60,13 +60,13 @@ function LandingPreview() {
             TaskFlow
           </motion.div>
           <nav className="flex gap-4 text-sm text-gray-600">
-            <motion.div whileHover={{ scale: 1.1 }} className="cursor-pointer">
+            <motion.div whileHover={{ scale: 1.1 }} className="cursor-pointer hidden md:block">
               Features
             </motion.div>
-            <motion.div whileHover={{ scale: 1.1 }} className="cursor-pointer">
+            <motion.div whileHover={{ scale: 1.1 }} className="cursor-pointer hidden md:block">
               Pricing
             </motion.div>
-            <motion.div whileHover={{ scale: 1.1 }} className="cursor-pointer">
+            <motion.div whileHover={{ scale: 1.1 }} className="cursor-pointer hidden md:block">
               Contact
             </motion.div>
           </nav>
